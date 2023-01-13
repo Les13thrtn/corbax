@@ -1,0 +1,111 @@
+.portfolio {
+  margin-bottom: 20rem;
+  overflow: hidden;
+}
+
+.portfolio__line {
+  position: relative;
+  margin-bottom: 14.3rem;
+  height: 52.9rem;
+}
+
+.portfolio__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio__line_link {
+  position: absolute;
+  bottom: -11rem;
+  left: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15.2rem;
+  height: 15.2rem;
+  background: #069dff;
+  box-shadow: inset 0px 0.5rem 1rem rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1.1rem);
+  border-radius: 100rem;
+}
+
+.portfolio__line_link svg {
+  width: 6.5rem;
+  height: 5.6rem;
+  object-fit: contain;
+}
+
+.portfolio__line_link svg path {
+  fill: rgba(255, 255, 255, 0.9);
+  opacity: 0.9;
+}
+
+.portfolio__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__title {
+  width: 100rem;
+  margin-bottom: 4.7rem;
+}
+
+.portfolio__btn {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 0.4rem 1.1rem rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1.1rem);
+}
+
+.portfolio__btn svg {
+  margin-left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.portfolio__btn svg path {
+  fill: #ffffff;
+}
+
+@media (max-width: 48em) {
+  .portfolio {
+    margin-bottom: 0rem;
+  }
+
+  .portfolio__line {
+    margin-bottom: 9.8rem;
+    height: 52.2rem;
+  }
+
+  .portfolio__line:last-child {
+    margin-bottom: 0;
+  }
+
+  .portfolio__line_link {
+    bottom: -8rem;
+    left: 42%;
+    width: 12.8rem;
+    height: 12.8rem;
+  }
+
+  .portfolio__line_link svg {
+    width: 6.5rem;
+    height: 5.6rem;
+    object-fit: contain;
+  }
+
+  .portfolio__inner {
+    margin-bottom: 9rem;
+  }
+
+  .portfolio__title {
+    width: 70rem;
+    margin-bottom: 5.4rem;
+  }
+
+  .portfolio__btn svg {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}

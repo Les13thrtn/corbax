@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url('../fonts/DelaGothicOne-Regular.ttf');
+  src: local('DelaGothicOne Regular'), local('DelaGothicOne-Regular'),
+    url('../fonts/DelaGothicOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('../fonts/EuclidCircularARegular.ttf');
+  src: local('EuclidCircularA Regular'), local('EuclidCircularA-Regular'),
+    url('../fonts/EuclidCircularARegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('../fonts/EuclidCircularALight.ttf');
+  src: local('EuclidCircularA Light'), local('EuclidCircularA-Light'),
+    url('../fonts/EuclidCircularALight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('../fonts/EuclidCircularASemiBold.ttf');
+  src: local('EuclidCircularA SemiBold'), local('EuclidCircularA-SemiBold'),
+    url('../fonts/EuclidCircularASemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('../fonts/EuclidCircularABold.ttf');
+  src: local('EuclidCircularA Bold'), local('EuclidCircularA-Bold'),
+    url('../fonts/EuclidCircularABold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

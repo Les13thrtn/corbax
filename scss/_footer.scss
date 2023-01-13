@@ -1,0 +1,352 @@
+.footer {
+  padding: 6rem 0;
+  padding-top: 20rem;
+  overflow: hidden;
+}
+
+.footer-contacts {
+  position: relative;
+  padding-top: 40rem;
+}
+
+.footer-white {
+  background: #edeced;
+  color: #0e0e0f;
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+  padding: 1.3rem 5rem 1.3rem 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100rem;
+}
+
+.footer-white .footer__top {
+  border: 1px solid rgba(14, 14, 15, 0.2);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  width: 23rem;
+  height: 7.7rem;
+}
+
+.footer__logo_icon {
+  margin-right: 2rem;
+  width: 7.5rem;
+  height: 7.7rem;
+  object-fit: contain;
+}
+
+.footer__logo_icon path {
+  fill: #fefefe;
+}
+
+.footer-white .footer__logo_icon path {
+  fill: #0e0e0f;
+}
+
+.footer__logo_corbax {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 141%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.footer__logo_games {
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 141%;
+  letter-spacing: 0.09em;
+  text-transform: lowercase;
+}
+
+.footer-white .footer__logo_corbax,
+.footer-white .footer__logo_games {
+  color: #0e0e0f;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-right: 16rem;
+}
+
+.socials_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.5rem;
+  height: 10.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100rem;
+  cursor: pointer;
+}
+
+.footer-white .socials_link {
+  border: 1px solid rgba(14, 14, 15, 0.2);
+}
+
+.socials_link {
+  margin-right: 2rem;
+}
+
+.socials_link_icon {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.socials_link_icon path {
+  fill: white;
+}
+
+.footer-white .socials_link_icon path {
+  fill: #0e0e0f;
+}
+
+.footer__links {
+  display: flex;
+}
+
+.footer__rights,
+.footer__privacy,
+.footer__developed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 10.5rem;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100rem;
+}
+
+.footer-white .footer__rights,
+.footer-white .footer__privacy,
+.footer-white .footer__developed {
+  border: 1px solid rgba(14, 14, 15, 0.2);
+}
+
+.footer__privacy {
+  margin-left: 2rem;
+  width: 25.4rem;
+  cursor: pointer;
+}
+
+.footer__developed {
+  width: 29.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__developed_logo {
+  margin-right: 2.3rem;
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.footer__developed_logo img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer__developed_text {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__developed_text span {
+  display: block;
+  color: #ffffff;
+}
+
+.footer-white .footer__developed_text {
+  color: #959595;
+}
+
+.footer-white .footer__developed_text span {
+  color: #0e0e0f;
+}
+
+@media (max-width: 48em) {
+  .footer {
+    position: relative;
+    padding: 6rem 0;
+  }
+
+  .footer-contacts {
+    padding-top: 40rem;
+  }
+
+  .footer-white {
+    background: #edeced;
+    color: #0e0e0f;
+  }
+
+  .footer__top {
+    display: block;
+    margin-bottom: 0rem;
+    padding: 0rem;
+    border: none;
+    border-radius: none;
+  }
+
+  .footer-white .footer__top {
+    border: none;
+  }
+
+  .footer__logo {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1.8rem 6rem 3rem 6rem;
+    width: 100%;
+    height: 19rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100rem;
+  }
+
+  .footer__logo_icon {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .footer__logo_corbax {
+    font-size: 3rem;
+  }
+
+  .footer__logo_games {
+    font-size: 2.8rem;
+    text-align: right;
+  }
+
+  .footer-white .footer__logo {
+    border: 1px solid rgba(14, 14, 15, 0.2);
+  }
+
+  .footer__nav {
+    margin-bottom: 2rem;
+    flex-direction: column;
+    width: 34rem;
+    padding: 6.6rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8.6rem;
+  }
+
+  .footer-white .footer__nav {
+    border: 1px solid rgba(14, 14, 15, 0.2);
+  }
+
+  .footer__nav .nav__item:not(:first-child) {
+    margin-top: 3.8rem;
+  }
+
+  .footer__nav .nav__link {
+    font-family: 'Euclid Circular A';
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .footer__bottom {
+    display: block;
+  }
+
+  .socials {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0rem;
+  }
+
+  .socials_link {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .socials_link {
+    margin-right: 0rem;
+  }
+
+  .socials_link_icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .footer__links {
+    position: absolute;
+    right: 4rem;
+    bottom: 42rem;
+    padding: 6.6rem 9.4rem;
+    flex-direction: column;
+    width: 34rem;
+    height: 49.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8.6rem;
+  }
+
+  .footer-white .footer__links {
+    border: 1px solid rgba(14, 14, 15, 0.2);
+  }
+
+  .footer__rights,
+  .footer__privacy {
+    margin: 0;
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 2.8rem;
+    text-align: center;
+    border: none;
+  }
+
+  .footer-white .footer__rights,
+  .footer-white .footer__privacy {
+    border: none;
+  }
+
+  .footer__rights {
+    margin-bottom: 7rem;
+  }
+
+  .footer__developed {
+    padding: 3.6rem 5rem;
+    justify-content: space-between;
+    width: 100%;
+    height: 16rem;
+    font-size: 3.6rem;
+  }
+
+  .footer-white .footer__developed {
+    border: 1px solid rgba(14, 14, 15, 0.2);
+  }
+
+  .footer__developed_logo {
+    width: 6rem;
+    height: 6rem;
+  }
+}

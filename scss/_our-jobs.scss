@@ -1,0 +1,166 @@
+.our-jobs {
+  margin-bottom: 20rem;
+}
+
+.our-jobs__title {
+  margin-bottom: 8.6rem;
+}
+
+.our-jobs__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-jobs__card {
+  padding: 4.5rem 5.8rem 4.8rem 3.3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 52rem;
+  height: 56rem;
+  color: #0e0e0f;
+}
+
+.our-jobs__card:not(:nth-child(3n)) {
+  margin-right: 5rem;
+}
+
+.our-jobs__card_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.our-jobs__card_decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0.7rem;
+  right: 4.1rem;
+  width: 12.5rem;
+  height: 17.8rem;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    #0e0e0f;
+  box-shadow: inset 0.2rem 0.5rem 1.4rem rgba(255, 255, 255, 0.2);
+  border-radius: 100rem;
+}
+
+.our-jobs__card_decor img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+}
+
+.our-jobs__card_top {
+  margin-bottom: auto;
+}
+
+.our-jobs__card_title {
+  margin-bottom: 1.8rem;
+  width: 20rem;
+  font-size: 2rem;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.our-jobs__card_experience {
+  width: 60%;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: rgba(5, 5, 5, 0.4);
+}
+
+.our-jobs__card_content {
+  margin-bottom: 4rem;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 161%;
+}
+
+.our-jobs__card_link {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.our-jobs__card_link svg {
+  margin-left: 2.5rem;
+  margin-bottom: -0.5rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+@media (max-width: 48em) {
+  .our-jobs {
+    margin-bottom: 18rem;
+  }
+
+  .our-jobs__title {
+    margin-bottom: 8.4rem;
+  }
+
+  .our-jobs__card {
+    padding: 6.4rem 5.6rem 8.2rem 4.4rem;
+    width: 100%;
+    height: 93.2rem;
+  }
+
+  .our-jobs__card:not(:nth-child(3n)) {
+    margin-right: 0rem;
+    margin-bottom: 8rem;
+  }
+
+  .our-jobs__card_decor {
+    width: 19.6rem;
+    height: 27.8rem;
+    border-radius: 200rem;
+  }
+
+  .our-jobs__card_decor img {
+    width: 12.8rem;
+    height: 12.8rem;
+  }
+
+  .our-jobs__card_title {
+    margin-bottom: 4rem;
+    width: 30rem;
+    line-height: 150%;
+    font-size: 3.6rem;
+  }
+
+  .our-jobs__card_experience {
+    font-size: 2.8rem;
+    line-height: 150%;
+  }
+
+  .our-jobs__card_content {
+    margin-bottom: 5.8rem;
+    font-size: 3.6rem;
+    line-height: 150%;
+  }
+
+  .our-jobs__card_link {
+    font-size: 2.8rem;
+  }
+
+  .our-jobs__card_link svg {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-bottom: 0;
+  }
+}

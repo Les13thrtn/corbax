@@ -1,0 +1,343 @@
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+header {
+  flex: 0 0 auto;
+}
+.main {
+  flex: 1 0 auto;
+}
+footer {
+  flex: 0 0 auto;
+}
+
+// ---------------------
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+// ---------------------
+
+.title {
+  font-weight: 400;
+  font-size: 6.5rem;
+  line-height: 163%;
+  text-transform: uppercase;
+  background: linear-gradient(
+    96.38deg,
+    #a2a1a2 7.63%,
+    #edeced 30.5%,
+    #a0a0a0 46.51%,
+    #ffffff 65.36%,
+    #a0a0a0 87.14%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+
+// ---------------------
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 2.3rem 4.4rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 100rem;
+  cursor: pointer;
+}
+
+// ---------------------
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+
+.scroll_text {
+  margin-bottom: 2.9rem;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.scroll_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll_btn::before {
+  position: absolute;
+  content: '';
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation-name: pulsing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.scroll_btn::after {
+  position: absolute;
+  content: '';
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation-name: pulsing;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.scroll_btn img {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+}
+
+// ---------------------
+.ribbons {
+  width: 100%;
+  position: absolute;
+  bottom: 7%;
+  z-index: 8;
+}
+
+.ribbons__item {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 120%;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ribbons__item-gray {
+  background: rgba(132, 136, 135, 0.2);
+  transform-origin: center;
+  transform: rotate(5deg);
+}
+
+.ribbons__item-green {
+  margin-top: -7rem;
+  background: #4ca28c;
+  transform-origin: center;
+  transform: rotate(-2.2deg);
+}
+
+.ribbon__item_word {
+  position: relative;
+  margin-right: 16rem;
+}
+
+.ribbon__item_word::after {
+  content: '';
+  right: -8rem;
+  position: absolute;
+  width: 2.1rem;
+  height: 2.1rem;
+  background: url('../img/about/star.svg') no-repeat;
+  background-size: contain;
+}
+
+// ---------------------
+.swiper-controllers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.navigation__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100rem;
+  cursor: pointer;
+}
+
+.navigation__btn img {
+  width: 1.5rem;
+  object-fit: contain;
+}
+
+.navigation__btn-next {
+  margin-left: 1rem;
+  transform: rotate(180deg);
+}
+
+.pagination {
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.pagination__counter {
+  margin-right: 4.7rem;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.pagination__counter span {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.1rem;
+  height: 1.9rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.1rem;
+}
+
+.swiper-pagination-bullet-active {
+  width: 0.2rem;
+  height: 4.5rem;
+  background: #ffffff;
+}
+
+.show {
+  display: none;
+}
+
+@media (max-width: 48em) {
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .title {
+    font-size: 6.6rem;
+  }
+
+  // ---------------------
+
+  .btn {
+    padding: 3.4rem 6.2rem;
+    font-size: 2.8rem;
+  }
+
+  // ---------------------
+
+  .navigation__btn {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .navigation__btn img {
+    width: 3rem;
+  }
+
+  .navigation__btn-next {
+    margin-left: 2rem;
+  }
+
+  .pagination__counter {
+    margin-right: 5.6rem;
+    font-size: 3rem;
+  }
+
+  .pagination__counter span {
+    margin-right: 2rem;
+    font-size: 3.6rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 0.2rem;
+    height: 3.8rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 0.4rem;
+    height: 9rem;
+  }
+
+  // ---------------------
+  .ribbons {
+    width: 400%;
+    position: absolute;
+    left: -165%;
+    bottom: 7%;
+    z-index: 8;
+  }
+
+  .ribbons__item {
+    padding: 4rem 0;
+    width: 100%;
+    font-size: 2.8rem;
+  }
+
+  .ribbons__item-gray {
+    transform: rotate(9.59deg);
+  }
+
+  .ribbons__item-green {
+    transform: rotate(-7.41deg);
+  }
+}

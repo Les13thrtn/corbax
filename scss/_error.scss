@@ -1,0 +1,245 @@
+.error {
+  position: relative;
+  height: 100vh;
+  padding-top: 16.7rem;
+}
+
+.error__inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.error__left_top {
+  display: flex;
+  margin-bottom: 51.5rem;
+}
+
+.error__left_top_text {
+  margin-right: 2.2rem;
+  width: 4.7rem;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 140%;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.error__left_top_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14.6rem;
+  height: 14.2rem;
+  background: #252527;
+  border-radius: 2rem;
+}
+
+.error__left_top_img img {
+  width: 9.3rem;
+  height: 11.3rem;
+  object-fit: contain;
+}
+
+.error__left_btn {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0rem 0.3rem8.33594px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(0.75rem);
+  border-radius: 757.8rem;
+}
+
+.error__left_btn svg {
+  margin-left: 1rem;
+  width: 1.4rem;
+  object-fit: contain;
+}
+
+.error__left_btn svg path {
+  fill: #ffffff;
+}
+
+.error__center {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  display: flex;
+}
+
+.error__center_four {
+  position: relative;
+  font-weight: 400;
+  font-size: 37.8rem;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(
+    89.41deg,
+    #a2a1a2 -67.01%,
+    #edeced 18.5%,
+    #a0a0a0 69.26%,
+    #ffffff 92.58%,
+    #a0a0a0 125.71%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.error__center_img {
+  width: 53.8rem;
+  object-fit: cover;
+}
+
+.error__center_text {
+  position: absolute;
+  left: 0;
+  bottom: 10rem;
+  width: 15.6rem;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 140%;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+}
+
+.error__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.error__right_top {
+  margin-bottom: 32.3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 16.2rem;
+  height: 16.8rem;
+  background: #252527;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+.error__right_top {
+  width: 17rem;
+  object-fit: contain;
+}
+
+.error__right_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.error__right_bottom_decor {
+  margin-bottom: 4rem;
+  width: 6.1rem;
+  height: 6.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edeced;
+  border-radius: 50%;
+}
+
+.error__right_bottom_decor img {
+  width: 2.1rem;
+  height: 2.1rem;
+  object-fit: contain;
+}
+
+.error__right_bottom_text {
+  width: 24.8rem;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 140%;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 48em) {
+  .error {
+    position: relative;
+    height: 100vh;
+    padding-top: 30rem;
+  }
+
+  .error__left_top {
+    display: flex;
+    margin-bottom: 90rem;
+  }
+
+  .error__left_top_text {
+    margin-right: 2.2rem;
+    width: 4.7rem;
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .error__left_top_img {
+    display: none;
+  }
+
+  .error__left_btn svg {
+    margin-left: 2rem;
+    width: 2rem;
+  }
+
+  .error__left_btn svg path {
+    fill: #ffffff;
+  }
+
+  .error__center {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    display: block;
+  }
+
+  .error__center_four {
+    font-size: 18rem;
+  }
+
+  .error__center_text {
+    width: 25rem;
+    position: absolute;
+    bottom: -96rem;
+    left: auto;
+    right: -7rem;
+    font-size: 2.8rem;
+    text-align: right;
+  }
+
+  .error__right_top {
+    display: none;
+  }
+
+  .error__right_bottom_decor {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+
+  .error__right_bottom_decor img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .error__right_bottom_text {
+    display: none;
+  }
+}
